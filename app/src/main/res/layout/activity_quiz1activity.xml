@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz1activity"
+    android:fillViewport="true"
+    android:background="@drawable/backgroundnew"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20sp"
+        >
+    <TextView
+        android:id="@+id/queslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Which Person is this?"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="4sp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/questionimage"
+            android:layout_width="wrap_content"
+            app:strokeWidth="5sp"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:strokeColor="@color/black"
+            android:layout_height="250sp"
+            android:layout_marginTop="10sp"
+            tools:background="@drawable/emaa_watson"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10sp">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:max="8"
+            android:layout_weight="1"
+            android:progress="2"
+            android:progressBackgroundTint="@color/black"
+            android:progressTint="#7B1FA2"
+            android:indeterminate="false"
+
+            />
+        <TextView
+            android:id="@+id/progresscounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textStyle="bold"
+            android:layout_marginLeft="5sp"
+            android:padding="4sp"
+            android:text="0/4"/>
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/ques1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/my_own_background"
+            android:gravity="center"
+            android:padding="10sp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+
+            tools:text="opt1" />
+
+        <TextView
+            android:id="@+id/ques2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="opt1"
+            android:gravity="center"
+
+            android:textSize="30sp"
+            android:background="@drawable/my_own_background"
+            android:padding="10sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10sp"/>
+        <TextView
+            android:id="@+id/ques3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            tools:text="opt1"
+            android:gravity="center"
+
+            android:textSize="30sp"
+            android:background="@drawable/my_own_background"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"/>
+        <TextView
+            android:id="@+id/ques4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="opt1"
+            android:gravity="center"
+
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:background="@drawable/my_own_background"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"/>
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SUBMIT"
+            android:padding="10sp"
+            android:layout_marginTop="5sp"/>
+    </LinearLayout>
+
+
+</ScrollView>

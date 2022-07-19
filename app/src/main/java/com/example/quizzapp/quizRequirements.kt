@@ -1,0 +1,16 @@
+package com.example.quizzapp
+
+import android.media.Image
+
+data class quizRequirements(
+    val id:Int,
+    val question:String,
+    val image:Int,
+    val opt1:String,
+    val opt2:String,
+    val opt3:String,
+    val opt4:String,
+    val correctAnswer:String
+
+
+)
